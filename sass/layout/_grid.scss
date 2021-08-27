@@ -12,6 +12,10 @@
         &:not(:last-child){
             margin-right: $gutter-horizontal;
         }
+
+        @media (max-width: 900px) {
+            width: 100% !important;
+        }
     }
 
     .col-1-of-2 {

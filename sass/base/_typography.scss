@@ -19,7 +19,6 @@ body {
     font-size: $default-font-size;
     line-height: 1.7;
     color: $color-grey-dark;
-    padding: 3rem;
     box-sizing: border-box;
 }
 
@@ -37,6 +36,11 @@ body {
         animation-duration: 1s;
         animation-timing-function: ease-out;
         backface-visibility: hidden;
+
+        @media (max-width: 600px) {
+            letter-spacing: 1rem;
+            font-size: 4.4rem;
+        }
     }
     
     &--sub{
@@ -49,6 +53,11 @@ body {
         animation-duration: 1s;
         animation-timing-function: ease-out;
         backface-visibility: hidden;
+
+        @media (max-width: 600px) {
+            letter-spacing: 1rem;
+            font-size: 2rem;
+        }
     }
 }
 
@@ -63,6 +72,12 @@ body {
     color: transparent;
     letter-spacing: 2px;
     transition: all .2s;
+
+    @media (max-width: 900px) {
+        letter-spacing: 0.3rem;
+        font-size: 3rem;
+    }
+
     
     &:hover {
         transform: skewY(-5deg) skewX(4deg) scale(1.1);
